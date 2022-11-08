@@ -1,21 +1,27 @@
 *{
 padding: 0px;
 margin: 0px;
+box-sizing: border-box;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+   
 }
 .head-container{
+    display: flex;
+    justify-content: center;
 background: url(images/headerImg.jpg);
 height: 400px;
 overflow: hidden;
 text-align: center;
 position: relative;
+flex-wrap: wrap;
 
 }
 .navbar{
-    position: absolute;
-    color: rgb(255, 255, 255);
-    background:rgba(0,0,0,0.3);
-    left:0px;
-    top:0px;
+    background: rgba(0,0,0,0.5);
     width:100%;
     
 }
@@ -28,10 +34,21 @@ position: relative;
  
 }
 .login,.create{
+    color: white;
     margin-left:40px ;
     padding: 10px;
     border: 2px solid white;
     background: rgba(0,0,0,0.3);
+}
+.head-container .navbar .navbar-brand img{
+    position: absolute;
+    top:20%;
+    left:40%;
+    width: 300px;
+    height: 300px;
+   
+    border-radius: 50%;
+    
 }
 
 .head-container .intro{
@@ -39,7 +56,6 @@ position: relative;
     top: 70%;
     left: 35%;
     font-size: 2rem;
-  
-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 
 }
